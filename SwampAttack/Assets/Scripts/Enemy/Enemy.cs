@@ -1,15 +1,23 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UIElements.Experimental;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] private Player _target;
     [SerializeField] private int _enemyHealth;
     [SerializeField] private int _moneyForMurder;
 
-    public Player Target => _target;
+    private Player _target;
 
-    public event UnityAction Dying;
+    public Player Target => _target;
+    public int Reward => _moneyForMurder;
+
+    public event UnityAction<Enemy> Dying;
+
+    public void Init(Player target)
+    {
+        _target = target;
+    }
 
     public void TakingDamage(int damage)
     {
@@ -17,6 +25,7 @@ public class Enemy : MonoBehaviour
 
         if (_enemyHealth <= 0)
         {
+            Dying?.Invoke(this);
             Destroy(gameObject);
         }
     }

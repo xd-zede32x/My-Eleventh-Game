@@ -9,8 +9,8 @@ public class Player : MonoBehaviour
     [SerializeField] private List<Weapon> _weapons;
     [SerializeField] private Transform _shootPoint;
 
-    private Animator _playerAnimator;
     private Weapon _currentWeapon;
+    private Animator _playerAnimator;
     private int _currentPlayerHealth;
 
     public int Money { get; private set; }
@@ -40,8 +40,9 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void OnEnemyDied(int reward)
+
+    public void AddMoney(int money)
     {
-        Money += reward;
+        Money += money;
     }
 }
