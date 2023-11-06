@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78b7ff198146cdc49bb06e609ad1e9d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemyHealth: 50
+  _enemyHealth: 30
   _moneyForMurder: 10
 --- !u!61 &8521073695324696938
 BoxCollider2D:
@@ -164,7 +164,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 1.5294118, y: 1.2058823}
+    oldSize: {x: 1.5757576, y: 1.2424242}
     newSize: {x: 1.375, y: 1.125}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -215,7 +215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _targetState: {fileID: 6064622529387974998}
   _transitionRange: 1
-  _rangeSpread: 0.4
+  _rangeSpread: 0.5
 --- !u!114 &6064622529387974998
 MonoBehaviour:
   m_ObjectHideFlags: 0
