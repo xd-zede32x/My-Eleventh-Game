@@ -1,1 +1,1 @@
-![Снимок экрана 2023-11-03 151704](https://github.com/xd-zede32x/My-Eleventh-Game/assets/125603037/1287ddcb-b63a-497e-a725-58c159aab0d0)
+![image](https://github.com/xd-zede32x/My-Eleventh-Game/assets/125603037/1edf5393-bf3b-4473-bf4b-304799ae19a5)
