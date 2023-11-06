@@ -6,18 +6,20 @@ using System.Collections.Generic;
 public class Player : MonoBehaviour
 {
     [SerializeField] private int _playerHealth;
-    [SerializeField] private    List<Weapon> _weapons;
+    [SerializeField] private List<Weapon> _weapons;
     [SerializeField] private Transform _shootPoint;
 
-    private Animator _animator;
+    private Animator _playerAnimator;
     private Weapon _currentWeapon;
     private int _currentPlayerHealth;
+
+    public int Money { get; private set; }
 
     private void Start()
     {
         _currentWeapon = _weapons[0];
         _currentPlayerHealth = _playerHealth;
-        _animator = GetComponent<Animator>();
+        _playerAnimator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -26,5 +28,20 @@ public class Player : MonoBehaviour
         {
             _currentWeapon.Shooting(_shootPoint);
         }
+    }
+
+    public void ApplyDamage(int damage)
+    {
+        _currentPlayerHealth -= damage;
+
+        if (_currentPlayerHealth <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    private void OnEnemyDied(int reward)
+    {
+        Money += reward;
     }
 }
