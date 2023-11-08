@@ -44,6 +44,6 @@ public class EnemyStateMachine : MonoBehaviour
         _currenState = nextState;
 
         if (_currenState != null)
-            _currenState.Enter(_target);
+            _currenState.Enter(_target);    
     }
 } 

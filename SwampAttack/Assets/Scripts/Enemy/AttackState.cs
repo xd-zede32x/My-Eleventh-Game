@@ -14,7 +14,7 @@ public class AttackState : State
     {
         _enemyAnimator = GetComponent<Animator>();
     }
-    
+
     private void Update()
     {
         if (_lastAttackTime <= 0)
@@ -30,5 +30,5 @@ public class AttackState : State
     {
         _enemyAnimator.Play("Attack");
         target.ApplyDamage(_enemyDamage);
-    }   
+    }
 }

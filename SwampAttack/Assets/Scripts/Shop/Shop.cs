@@ -12,7 +12,7 @@ public class Shop : MonoBehaviour
     {
         for (int index = 0; index < _weapons.Count; index++)
         {
-            AddItem(_weapons[index]);       
+            AddItem(_weapons[index]);
         }
     }
 
@@ -26,7 +26,7 @@ public class Shop : MonoBehaviour
 
     private void OnSellButtonClick(Weapon weapon, WeaponView view)
     {
-        TrySellWeapon(weapon,view);
+        TrySellWeapon(weapon, view);
     }
 
     private void TrySellWeapon(Weapon weapon, WeaponView view)

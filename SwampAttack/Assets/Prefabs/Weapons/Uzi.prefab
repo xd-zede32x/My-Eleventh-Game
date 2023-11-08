@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6490395514951305900}
-  - component: {fileID: 744063315976186364}
+  - component: {fileID: 5018008710395089026}
   m_Layer: 0
-  m_Name: ShotGun
+  m_Name: Uzi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32,7 +32,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &744063315976186364
+--- !u!114 &5018008710395089026
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,11 +41,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 327582481753298861}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0050cf672a7b422458f908a52d6cec75, type: 3}
+  m_Script: {fileID: 11500000, guid: eac089fb6d31f25469371e8bf9a9e1c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _weaponIcon: {fileID: 21300000, guid: 119063878942a84468364064b64e79d1, type: 3}
-  _namesOfWeapons: ShotGun
-  _priceOfWeapons: 50
+  _weaponIcon: {fileID: 21300000, guid: c2ebbfeb3e9d81a4296d6f48c476f5c5, type: 3}
+  _namesOfWeapons: Uzi
+  _priceOfWeapons: 100
   _purchased: 0
-  Bullet: {fileID: 2991847247156532697, guid: 454cb97435dd6454dbab5596d2abfd4b, type: 3}
+  Bullet: {fileID: 2991847247156532697, guid: bb6c23ff11a2c87488531e3125810b2c, type: 3}

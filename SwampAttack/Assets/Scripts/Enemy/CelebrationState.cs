@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CelebrationState : State
 {
-   private Animator _animator;
+    private Animator _animator;
 
     private void Awake()
     {

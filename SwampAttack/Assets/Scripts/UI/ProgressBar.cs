@@ -14,4 +14,4 @@ public class ProgressBar : Bar
     {
         _spawner.EnemyCountChanged -= OnValueChanged;
     }
-}  
+}
