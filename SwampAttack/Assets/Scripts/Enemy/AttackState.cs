@@ -31,4 +31,4 @@ public class AttackState : State
         _enemyAnimator.Play("Attack");
         target.ApplyDamage(_enemyDamage);
     }
-}
+}   
